@@ -9,3 +9,5 @@ The 3 task compiles a C file and creates an executable file
 The 4 task is a C program using puts
 
 The 5 task is a C program using printf
+
+The 6 task prints the sizeof for various types 
