@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints onto screen 
+ * main - prints onto screen
  *
  * Return: zero
  */
