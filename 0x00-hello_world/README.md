@@ -6,4 +6,6 @@ The 2 task generates assembly code for C
 
 The 3 task compiles a C file and creates an executable file
 
-The 4 task is a C program
+The 4 task is a C program using puts
+
+The 5 task is a C program using printf
