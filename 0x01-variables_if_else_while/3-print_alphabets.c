@@ -2,8 +2,8 @@
 #include <unistd.h>
 /**
  * main - Entry point
- * 
- * Return: Return 0(successful)
+ *
+ * Return: 0 (successful)
  */
 int main(void)
 {
@@ -13,6 +13,10 @@ int main(void)
 	{
 		putchar(ch);
 	}
+	for (ch = 'A'; ch <= 'Z'; ch++)
+	{
+		putchar(ch);
+	}
 	putchar('\n');
-return (0);
+	return (0);
 }
