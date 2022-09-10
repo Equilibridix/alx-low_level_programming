@@ -10,4 +10,6 @@ The 4 task is a C program using puts
 
 The 5 task is a C program using printf
 
-The 6 task prints the sizeof for various types 
+The 6 task prints the sizeof for various types
+
+The 7 task generates assembly code 
