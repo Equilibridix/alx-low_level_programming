@@ -12,4 +12,6 @@ The 5 task is a C program using printf
 
 The 6 task prints the sizeof for various types
 
-The 7 task generates assembly code 
+The 7 task generates assembly code
+
+The 8 task creates a C program using fprintf output 
