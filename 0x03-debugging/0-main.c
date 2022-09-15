@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * main - Entry point
  * Description - tests function that prints negative or positive
@@ -8,7 +9,7 @@
 int main(void)
 {
 	int i;
-
+	
 	i = 0;
 	postive_or_negative(i);
 
