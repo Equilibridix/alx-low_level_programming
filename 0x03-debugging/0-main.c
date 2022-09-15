@@ -6,7 +6,7 @@
  * Return: 0(succesful)
  */
 
-int main(void)
+int positive_or_negative()
 {
 	int i;
 	
