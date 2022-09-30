@@ -1,74 +1,51 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-#include <stdbool.h>
-#include "main.h"
 
 /**
- * coinConverter - helper function that does all the mathematics
- * @i: passed in variable from main for calculations
- * Return: the number of coins needed minimum for the passed in variable
- */
+  * main - prints the minimum number of coins to make change.
+  * @argc: argument counter.
+  * @argv: argument vector.
+  * Return: return 1 if error, else return 0.
+  */
 
-int coinConverter(int i)
-{
-	int count = 0;
-
-	while (i != 0)
-	{
-		if (i % 10 == 9 || i % 10 == 7)
-			i -= 2;
-		else if (i % 25 == 0)
-			i -= 25;
-		else if (i % 10 == 0)
-			i -= 10;
-		else if (i % 5 == 0)
-			i -= 5;
-			else if (i % 2 == 0)
-		{
-			if (i % 10 == 6)
-				i -= 1;
-			else
-				i -= 2;
-		}
-		else
-			i -= 1;
-
-		count++;
-	}
-
-	return (count);
-}
-
-/**
- * main - takes in exactly one argument for minimum coin count
- * @argc: number of command line arguments
- * @argv: array
- * Return: 0 if exactly 1, otherwise 1.
- */
 int main(int argc, char *argv[])
 {
-	int i, coin;
+	int change, num;
 
-	coin = 0;
+	change = 0;
 
-	if (argc != 2)
+	if (argc == 2)
+	{
+		num = atoi(argv[1]);
+		if (num > 0)
+		{
+			for (; num >= 25; change++)
+			{
+				num = num - 25;
+			}
+			for (; num >= 10; change++)
+			{
+				num = num - 10;
+			}
+			for (; num >= 5; change++)
+			{
+				num = num - 5;
+			}
+			for (; num >= 2; change++)
+			{
+				num = num - 2;
+			}
+			for (; num >= 1; change++)
+			{
+				num = num - 1;
+			}
+		}
+		printf("%d\n", change);
+		return (0);
+	}
+	else
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	i = atoi(argv[1]);
-
-	if (i < 0)
-		printf("0\n");
-
-	else
-	{
-		coin = coinConverter(i);
-
-		printf("%d\n", coin);
-	}
-
-	return (0);
 }
