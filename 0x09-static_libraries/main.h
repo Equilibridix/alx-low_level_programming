@@ -3,7 +3,7 @@
 
 /**
  * Header files containing function prototypes
- * 	included in the static library
+ * included in the static library
  */
 int _putchar(char c);
 int _islower(int c);
